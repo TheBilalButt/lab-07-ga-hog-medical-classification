@@ -1,0 +1,71 @@
+{
+    "student": "Muhammad Bilal Butt",
+    "dataset": "PneumoniaMNIST",
+    "seed": 42,
+    "n_classes": 3,
+    "class_names": [
+        "Normal Lung",
+        "Bacterial Pneumonia",
+        "Viral Pneumonia"
+    ],
+    "n_total_features": 2304,
+    "n_selected_features": 445,
+    "reduction_pct": 80.69,
+    "best_ga_setting": "Setting 1 (Conservative GA: Pop=30, Mut=0.04)",
+    "baseline_metrics": {
+        "accuracy": 94.12,
+        "precision_macro": 94.35,
+        "recall_macro": 94.12,
+        "macro_f1": 94.08,
+        "weighted_f1": 94.1,
+        "balanced_accuracy": 94.12,
+        "specificity_macro": 97.06,
+        "cohen_kappa": 0.9118,
+        "matthews_corrcoef": 0.9125,
+        "latency_ms": 0.204
+    },
+    "proposed_metrics": {
+        "accuracy": 98.04,
+        "precision_macro": 98.15,
+        "recall_macro": 98.04,
+        "macro_f1": 98.01,
+        "weighted_f1": 98.03,
+        "balanced_accuracy": 98.04,
+        "specificity_macro": 99.02,
+        "cohen_kappa": 0.9706,
+        "matthews_corrcoef": 0.9708,
+        "latency_ms": 0.041
+    },
+    "improvements": {
+        "accuracy": 3.92,
+        "precision_macro": 3.8,
+        "recall_macro": 3.92,
+        "macro_f1": 3.93,
+        "weighted_f1": 3.93,
+        "balanced_accuracy": 3.92,
+        "specificity_macro": 1.96,
+        "cohen_kappa": 0.0588,
+        "matthews_corrcoef": 0.0583,
+        "latency_speedup_x": 4.98
+    },
+    "ga_setting1": {
+        "name": "Setting 1 (Conservative GA: Pop=30, Mut=0.04)",
+        "pop_size": 30,
+        "mutation_rate": 0.04,
+        "crossover": "Uniform",
+        "selection": "Tournament",
+        "alpha": 0.85,
+        "best_fitness": 0.9412,
+        "final_features": 445
+    },
+    "ga_setting2": {
+        "name": "Setting 2 (Exploratory GA: Pop=50, Mut=0.08)",
+        "pop_size": 50,
+        "mutation_rate": 0.08,
+        "crossover": "Two-Point",
+        "selection": "Tournament",
+        "alpha": 0.8,
+        "best_fitness": 0.9285,
+        "final_features": 512
+    }
+}
